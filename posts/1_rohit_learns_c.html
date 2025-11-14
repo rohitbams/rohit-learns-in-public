@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>rohit learns c</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="../style/styles.css">
+        <link rel="stylesheet" href="../style/prism.css">
+        <link rel="stylesheet" href="https://dev.prismjs.com/themes/prism.css" />
+
+    </head>
+    <body>
+
+        <!-- <h3>rohit learns c</h3> -->
+        <main>
+            <p> over the last few days i've been really interesting in pursuing embedded systems 
+            as a career. since my masters did not have any module that went deep into embedded systems 
+            (interactive hardware and software was not really an embedded systems module, it was a design module), 
+            i decided to start learning it on my own. i learned that there are some common requirements in most entry 
+            level embedded jobs;
+            <ul>
+                <li>c and c++</li>
+                <li>FreeRTOs</li>
+                <li>stm32</li>
+            </ul>
+            now two of these three things are kinda tricky, i don't have a readily available pc that i can 
+            install FreeRTOs on (looking at you dell xps with the 4th dead battery), or an stm32 dev kit to start 
+            developing on immediately. so my best option, and perhaps the most valuable option, is to start learning 
+            c.
+            </p>
+
+            <p>
+                up until now c seemed almost like a mythical language of the gods to me. it felt too unapproachable, 
+                too low level and too complicated to me. i was kinda scared to get into it. but i decided to let my curiosity 
+                lead the way and started my journey to learn c anyway. turns out, it really is pretty straight-forward! 
+                well at least from lesson one that is. i made some notes!
+            </p>
+            <p>
+                the thing that makes c different from other languages like java or c++ is the manual memory management aspect of it. 
+                i'll be honest, i only finished one lesson which covered pointers and basic syntax, but hey that is <em>the topic</em>
+                they all talk about when it comes to c and memory management. so let's get on with it.
+            </p>
+
+            <p>
+                to understand pointers, we need to first understand how memory works, ie., how data from your code is stored in the 
+                memory when you run your program. without going too deep, let's look at the two types of memory storage that are relevant 
+                here:
+            </p>
+
+            <ol>
+                <li>stack</li>
+                <li>heap</li>
+            </ol>
+
+            <p>
+                stack-based memory allocation: <br> 
+                stack is that region in the memory where local variables and functions are stores. each thread has an independent reserved stack. 
+                every time a function is called, it gets placed on the top of the stack until it returns. if a function is called inside another 
+                function that is already being executed (such as nested functions or anonymous functions), it gets placed on top of the function 
+                that is already running. the function that is on the top of the stack must always return before anything that is under it on the 
+                stack. this principle is known as Last-in-First-out (LIFO). LIFO is also a principle used in cost accounting, but fuck if i 
+                remember what it actually did. but here it means the last thing to enter the stack must be the first to go out. any variables 
+                declared inside the current executing function will only remain in memory while the function is on the stack. once the function 
+                has returned, any variables within the local scope will be lost. that means the data is not longer accessible. 
+
+            </p>
+            
+        </main>
+        
+        <script src="../script/script.js" async defer></script>
+        <script src="../script/prism.js"></script>
+    </body>
+</html>

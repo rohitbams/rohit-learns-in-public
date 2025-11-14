@@ -1,0 +1,34 @@
+/*https://arkwright.github.io/scaling-react-server-side-rendering.html for reference*/
+
+
+body {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    /* font-size: 90%; */
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #fff;
+    color: #444;
+    flex: 1 1 auto;
+    padding: 2rem;
+    width: 800px;
+    outline: 2px solid black;
+    margin-left: auto;
+    margin-right: auto;    
+}
+
+main {
+    display: block;
+    /* outline: 2px solid red; */
+    /* justify-content: center;     */
+}
+
+.date {
+    font-style: italic;
+    font-size: 14px;
+}
+
+#post-title {
+    margin-bottom: 8px;
+}
+
