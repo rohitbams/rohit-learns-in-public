@@ -14,8 +14,8 @@ const loadPosts = async () => {
 
             html += `
                 <div class="post-preview">
-                    <h2 id="post-title">${post.title}</h2>
-                    <span class="date">${post.date} - ${post.time}</span>
+                    <h2 id="post-title">#${post.id} ${post.title}</h2>
+                    <span class="date">${post.date} — ${post.time}</span>
                     <div class="post-body">${postHTML}</div>
                 </div>
             `;
