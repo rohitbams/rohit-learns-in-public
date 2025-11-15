@@ -41,6 +41,12 @@ hr {
     /* padding-left: 16px; */
 }
 
+nav {
+    margin-bottom: 1.5em;
+    text-decoration: none;
+    
+}
+
 main {
     display: block;
     /* outline: 2px solid red; */
