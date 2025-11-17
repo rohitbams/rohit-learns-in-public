@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>rohit learns building maven project and TDD</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="../style/styles.css">
+        <link rel="stylesheet" href="../style/prism.css">
+    </head>
+    <body>
+        <hr>
+        <main>
+            <p>
+                i mean i studied this in cs5031 software engineering practices, and a lot more than what i am going to 
+                document in this here article, but i needed the revision and i love learning, so here is a little bit 
+                of an introductory lesson about building maven projects and the importance of unit testing.
+            </p>
+            <p>
+                let's start by talking about what the heck maven even is. maven is a build system that allows you to test 
+                your code using testing dependencies such a JUnit. maven builds (compiles) and tests your code for you 
+                before you run it so that everything works just as you expect it to as the developer. this is especially 
+                useful in ci/cd pipelines in continuous development environments.
+            </p>
+            <p>
+                so how does maven do this? simple answer is, maven reads the <span><pre><code>pom.xml</code></pre></span> file that 
+                includes all the dependencies such a jupiter.junit, etc., and depending on whether you've set up your 
+                git ci/cd pipelines to do it or you do it manually yourself, maven takes the command to build and compile your project.
+            </p>
+
+            <!--TDD-->
+            <p>
+                so how to go about writing your first tests? <br>
+                i really struggled with tdd before i understood this fundamental thing about it: in tdd, you test against an observable 
+                user requirement. i used to scratch my head thinking of tests to write before i even knew what i needed to implement when 
+                all i had to do was think about what are the user requirements from the user stories. 'as a user i want to xyz' the 'xyz' 
+                <em>is</em> what you test!
+            </p>
+
+            <p>
+                remember to create a special testing constructor if you have specific behaviours to test.
+            </p>
+        </main>
+
+        
+        <script src="../script/script.js" async defer></script>
+        <script src="../script/prism.js" async defer></script>
+    </body>
+</html>
