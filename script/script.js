@@ -14,7 +14,7 @@ const loadPosts = async () => {
 
             html += `
                 <div class="post-preview">
-                    <h2 id="post-title">#${post.id} ${post.title}</h2>
+                    <h2 id="post-title">#${post.id}_${post.title}</h2>
                     <span class="date">${post.date} — ${post.time}</span>
                     <div class="post-body">${postHTML}</div>
                 </div>
@@ -28,3 +28,8 @@ const loadPosts = async () => {
 };
 
 loadPosts();
+
+// function toggleDarkMode() {
+//     var element = document.body;
+//    element.classList.toggle("dark-mode");
+// }
