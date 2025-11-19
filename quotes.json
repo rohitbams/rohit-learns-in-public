@@ -1,0 +1,62 @@
+[
+    {
+        "id": "0",
+        "quote": "Prince Zuko, pride is not the opposite of shame, but its source.",
+        "by": "Uncle Iroh",
+        "tags": {
+            "1": "pride",
+            "2": "shame"
+        }
+    }, 
+    {
+        "id": "1",
+        "quote": "'I wish none of this had happened.' 'So do all who live to see such times, but that is not for them to decide. All we have to decide is what to do with the time that is given to us'",
+        "by": "Gandalf to Frodo",
+        "tags": {
+            "1": "acceptance",
+            "2": "hardship"
+        }
+    },
+     {
+        "id": "2",
+        "quote": "God, give me the serenity to accept the things I cannot change, the courage to change the things I can, and the wisdom to know the difference",
+        "by": "Serenity Prayer of the Alcoholics Anonymous",
+        "tags": {
+            "1": "acceptance",
+            "2": "hardship"
+        }
+    },
+    {
+        "id": "3",
+        "quote": "Trust me Paula, you have all the equipment. You just need to read the manual!",
+        "by": "Elle Woods, Legally Blonde",
+        "tags": {
+            "1": "learning",
+            "2": "growth",
+            "3": "confidence"
+        }
+    },
+        {
+        "id": "4",
+        "quote": "Use what talents you possess: the woods would be very silent if no birds sang there except those that sang best.",
+        "by": "Henry Van Dyke",
+        "tags": {
+            "1": "being-yourself",
+            "2": "authenticity"
+        }
+    },
+    {
+        "id": "6",
+        "quote":  "Time is Too slow for those who Wait, Too swift for those who Fear, Too long for those who Grieve, Too short for those who Rejoice, But for those who Love, Time is not.",
+        "by": "Henry Van Dyke",
+        "tags": {
+            "1": "love",
+            "2": "time"
+        }
+    }  
+
+
+
+
+
+]

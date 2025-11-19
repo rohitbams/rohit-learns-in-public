@@ -26,8 +26,30 @@ const loadPosts = async () => {
         console.error("Error:", err);
     }
 };
-
 loadPosts();
+
+const loadQuotes = async () => {
+    const quotesContainer = document.querySelector(".quotes");
+
+    try {
+        const response = await fetch("quotes.json");
+        const quotes = await response.json();
+        const randomQuote = quotes[Math.floor(Math.random() * quotes.length)];
+
+        const html = `
+            <div class="quotes">
+                <div id="quote">${randomQuote.quote}</div>
+                <div class="quote-author">~ ${randomQuote.by}</div>
+            </div>
+        `;
+
+        quotesContainer.innerHTML = html;
+    } catch (err) {
+        console.error("Error:", err);
+    }
+};
+loadQuotes();
+
 
 // function toggleDarkMode() {
 //     var element = document.body;
